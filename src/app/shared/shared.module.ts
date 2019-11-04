@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-
+import { ProfileComponent } from './profile/profile.component';
+import { LoginComponent } from './login/login.component';
+import { IonicModule } from '@ionic/angular';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+  declarations: [ProfileComponent, LoginComponent],
+  imports: [CommonModule, IonicModule],
+  exports: [ProfileComponent, LoginComponent]
 })
-export class SharedModule { }
+export class SharedModule {}
